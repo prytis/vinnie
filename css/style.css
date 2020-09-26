@@ -1,0 +1,41 @@
+.left {
+  width: 45%;
+  float: left;
+  padding: 30px;
+  
+}
+.right {
+  width: 55%;
+  float: right;
+  padding: 50px;
+}
+.small{
+  width: 15%;
+  float: right;
+  padding: 15 20px;
+}
+
+.bounce-enter-active, .bounce-leave-active {
+  animation: bounce-in .1;
+}
+.bounce-enter, .bounce-leave-to
+/* .component-fade-leave-active below version 2.1.8 */ {
+  animation: bounce-in .1s reverse;;
+}
+@keyframes bounce-in {
+0%   {transform:scale(1);}
+25%  {transform:scale(1.02);}
+50%  {transform:scale(1.03);}
+75%  {transform:scale(1.02);}
+100% {transform:scale(1);}
+}
+.bigImg {
+  width:300px;
+  height:300px;
+}
+.btnImg {
+  width:100px;
+  height:100px;
+  cursor: pointer;
+}
+ 

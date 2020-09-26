@@ -1,0 +1,58 @@
+<html>
+   <head>
+      <title>VueJs Instance</title>
+      <script type = "text/javascript" src = "js/vue.js"></script>
+      
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/reset.css">
+   </head>
+   <body>
+      <div id = "root" class="container">
+            <div class="row" >
+               <h1 class="container box">KINIJA</h1>
+            </div>
+              
+            <div  class="left" >
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci dolore deserunt placeat hic commodi autem consectetur, veniam, fugiat quia fuga cumque asperiores corrupti. Eaque, iste doloremque labore dolore nobis reprehenderit praesentium voluptatum? Iste voluptas, nam perspiciatis necessitatibus, exercitationem non dolor amet excepturi voluptatum cum maiores, vitae dolore saepe adipisci harum iusto magnam accusantium explicabo atque odio tempora quod velit illo alias! Totam rem placeat voluptas molestiae eos quia aperiam! Fugiat alias vel, enim dolore expedita aliquam vero quasi corporis sapiente dignissimos distinctio. Quos doloremque, itaque iusto, voluptate alias dicta magni non odio, quam dolorum corporis nam delectus similique at perspiciatis reiciendis distinctio vero ea illum possimus tempore? Quam quis saepe tempore! Vero nobis dolores necessitatibus consequuntur. Maiores illo sed corporis. Temporibus deserunt perspiciatis minus quo, quos fugiat, nisi earum delectus deleniti explicabo, unde sapiente impedit. Architecto vitae dicta, maiores nemo aut pariatur tempore, fugit officia corrupti similique totam, porro necessitatibus possimus ad quis vero earum natus vel. Blanditiis sint nam ullam iure asperiores quam sunt doloremque, omnis saepe deleniti tempore aperiam consectetur inventore odio totam consequuntur, a itaque et, tempora quibusdam libero aut aliquid. Eveniet nobis, autem porro inventore commodi molestias deleniti unde, tempore nesciunt perferendis possimus suscipit beatae nam!</p>
+            </div>     
+            <div id = "root" class="right">
+
+            <transition name="bounce" mode="out-in">   
+               <component v-bind:is="name"></component>
+            </transition>  
+
+            <transition name="bounce" mode="out-in">
+               <component v-bind:is="view" ></component>
+            </transition>
+            </div> 
+            <div class="row small" >
+               <!-- <component v-bind:is="tool" mtool="handComponent"></component> -->
+               <div @click = "change(1)" >
+                  <img  src="images/fmouse.png" class="btnImg"/>
+               </div>
+               <div @click = "change(2)" >
+                  <img  src="images/hand.png" class="btnImg"/>
+               </div>
+               <div @click = "change(3)" >
+                  <img  src="images/racket.png" class="btnImg"/>
+               </div>
+               <div @click = "change(4)" tool-name=>
+                  <img  src="images/umbrella.png" class="btnImg"/>
+               </div>
+               <div @click = "change(5)" >
+                  <img  src="images/Mao.png" class="btnImg"/>
+               </div>
+               <div @click = "change(6)" >
+                  <img  src="images/whip.png" class="btnImg"/>
+               </div>
+               <div @click = "change(7)" >
+                  <img  src="images/aflag.png" class="btnImg"/>
+               </div>
+            </div>   
+      </div>
+     
+      <script type = "text/javascript" src = "js/app.js"></script> 
+   </body>
+</html>
+
